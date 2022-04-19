@@ -22,7 +22,10 @@ let B7Validator = {
   checkInput:(input) => {
     let rules = input.getAttribute('data-rules');
     if(rules !== null) {
-        
+        rules = rules.split('|');
+        for(let k in rules) {
+          
+        }
     }
 
     return true;
